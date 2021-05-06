@@ -1,0 +1,4 @@
+class Constants:
+
+    DEFAULT_EDITOR_HEIGHT = 33
+    INFINITY_SIZE = 5000
