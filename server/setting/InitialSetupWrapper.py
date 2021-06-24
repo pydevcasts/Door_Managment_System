@@ -15,6 +15,7 @@ class InitialSetupWrapper(CommandWrapper):
 
     ################################################################################
     def execute(self):
+        """ PyQT"""
         dialog = InitialSetupDialog(self.onStart, self.onCancel, self.onScan)
         dialog.show()
 

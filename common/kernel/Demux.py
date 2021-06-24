@@ -51,6 +51,9 @@ class Demux:
     def getPackage3(self):  # inspect mode. works fine, but won't work in windows exe
         import inspect
         frm = inspect.stack()[2]
+        # [FrameInfo(frame=<frame at 0x000001D2395721D0, file '<stdin>', line 1, 
+        # code <module>>, filename='<stdin>', lineno=1, function='<module>', code_context=None, index=None)]
         mod = inspect.getmodule(frm[0])
         package = mod.__name__
         return package
+

@@ -10,12 +10,13 @@ class CommandWrapper(CPushButton):
         self.command = command
         self.doorPanel = doorPanel
         CPushButton.__init__(self, command.getTitle(), command.getImageAddress(), 32, self.onClicked)
-
+        """ this is attr without refrenses"""
         from Lang import lregister
         lregister(self)
 
     ################################################################################
     def setTranslations(self):
+        """ this is for language argu of language inside of pyqt """
         self.setText(lget(self.command.getTitle()))
 
     ################################################################################
@@ -37,7 +38,7 @@ class CommandWrapper(CPushButton):
         from common.kernel.request.CommandRequest import CommandRequest
         request = CommandRequest(self.command.getParameterCode())
         response, exception = self.doorPanel.callRequest(request)
-
+        """ this is attr without refrenses"""
         if exception is not None:
             self.doorPanel.error(exception)
             return

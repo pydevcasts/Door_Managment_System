@@ -31,6 +31,8 @@ class ServerUDPSender(threading.Thread):
         from common.kernel.request.InfoRequest import InfoRequest
         self.broadcastRequest = InfoRequest()
         self.broadcastRequest.project = projectKey
+        """the project is a method in request class
+        """
         self.active = True
 
     ###############################################################################################################

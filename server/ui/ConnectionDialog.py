@@ -6,6 +6,7 @@ from common.shell.ui.dialog.CStatusBarDialog import CStatusBarDialog
 
 class ConnectionDialog(CStatusBarDialog):
 
+
     ###########################################################################
     def __init__(self):
         CStatusBarDialog.__init__(self)

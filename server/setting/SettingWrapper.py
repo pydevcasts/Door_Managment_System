@@ -6,12 +6,16 @@ class SettingWrapper(CommonSettingWrapper):
     ################################################################################
     def __init__(self, setting, doorPanel):
         CommonSettingWrapper.__init__(self, setting)
+        """shell, PyQT, Ui
+        """
         self.doorPanel = doorPanel
 
     ################################################################################
     def onNewValueAccepted(self, value):
 
         parameterCode = self.setting.getParameterCode()
+        """initialized in settingwrapper
+        """
         from common.kernel.request.SetParamRequest import SetParamRequest
         request = SetParamRequest(parameterCode, value)
         response, exception = self.doorPanel.callRequest(request)

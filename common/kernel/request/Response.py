@@ -45,7 +45,11 @@ class Response:
     ############################################################################
     def isSuccessful(self):
         return self.error == Response.ERROR_SUCCESS
+        """error is false
+        """
 
     ############################################################################
     def isBuffered(self):
         return "true" == str(self.buffered).lower()
+        """return "true"
+        """

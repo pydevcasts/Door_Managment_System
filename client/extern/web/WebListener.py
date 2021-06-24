@@ -17,6 +17,11 @@ class WebListener(threading.Thread):
             import web
             urls = ('/deutschtec/request', 'RequestHandler')
             self.webApp = web.application(urls, globals())
+            """You now have your web.py application running a real web server on your computer.
+             Visit that URL and you should see “Hello, world!” 
+             (You can add an IP address/port after the “code.py” bit to control
+            where web.py launches the server. You can also tell it to run a fastcgi or scgi server.)
+            """
         except:
             from Globals import logger
             logger.error("Wi-Fi features are not installed. Contact your vendor.")

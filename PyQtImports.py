@@ -11,3 +11,4 @@ from PyQt5.QtGui import QPixmap, QIcon, QCursor, QMovie, QTextCursor, QIntValida
 from PyQt5.QtWidgets import QMainWindow, QWidget, QDesktopWidget, QListWidget, QGridLayout, QHBoxLayout, QVBoxLayout, \
      QFrame, QScrollArea, QDialog, QLabel, QPushButton, QLineEdit, QTextEdit, QListWidgetItem, QRadioButton, QStatusBar, \
      QSlider, QApplication, QCheckBox, QComboBox, QToolBar, QToolButton, QSizePolicy, QMenu, QSplashScreen, QFileDialog
+

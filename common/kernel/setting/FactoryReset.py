@@ -21,3 +21,5 @@ class FactoryReset1(FactoryReset):
 class FactoryReset2(FactoryReset):
     def __init__(self):
         FactoryReset.__init__(self)
+        """supper.__init__(self)
+        """

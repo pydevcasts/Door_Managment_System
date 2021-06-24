@@ -8,3 +8,6 @@ class BluetoothConnectionResponse(Response):
         Response.__init__(self, Request.BLUETOOTH_CONNECTION)
         self.__dict__ = doorResponse.__dict__.copy()
         self.id = Request.BLUETOOTH_CONNECTION
+
+        """blutooth request sent and get response with json or dict python
+        """

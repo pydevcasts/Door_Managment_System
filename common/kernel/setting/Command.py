@@ -18,6 +18,10 @@ class Command:
     def getTitle(self):
         from Lang import lget
         return lget(self.titleKey)
+        """ برگرداندن تابع
+        def lget(key, *params):
+            return language.get(key, *params)
+        """
 
     ################################################################################
     def getImageAddress(self):

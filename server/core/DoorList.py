@@ -158,7 +158,7 @@ class DoorList:
         finally:
             self.lock.release()
 
-    ###############################################################################
+    ######################################## #######################################
     def changeStatus(self, serial, status):
         door = self.findDoor(serial)
         if door is None:

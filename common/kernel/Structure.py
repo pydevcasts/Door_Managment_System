@@ -13,7 +13,9 @@ class Structure:
     def register(self, envImpl):
         model = envImpl.getModel()
         version = envImpl.getVersion()
-
+        """getVersion, getModel is method in 
+        from common.kernel.struct.RevolvingStruct3_00 import RevolvingStruct3_00
+        """
         if self.modelMap.get(model, None) is None:
             self.modelMap[model] = [envImpl]
             return

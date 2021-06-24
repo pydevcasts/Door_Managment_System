@@ -1,6 +1,7 @@
 import requests
 import socket
 from getmac import get_mac_address as gma
+"""کتابخانه مک آدرس """
 import platform
 
 from server.connection.ConnectionManager import ConnectionManager

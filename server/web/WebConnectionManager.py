@@ -1,5 +1,5 @@
 import requests
-from getmac import get_mac_address as gma
+# from getmac import get_mac_address as gma
 import platform
 # from uuid import getnode as get_mac
 
@@ -11,7 +11,7 @@ from server.web.WebDoorListLoader import webDoorListLoader
 
 class WebConnectionManager(ConnectionManager):
     """get url get connection type getResponseText start and stop Connection"""
-    MAC_ADDRESS = gma().upper()  # ':'.join(("%012X" % get_mac())[i:i+2] for i in range(0, 12, 2))
+    # MAC_ADDRESS = gma().upper()  # ':'.join(("%012X" % get_mac())[i:i+2] for i in range(0, 12, 2))
     OS_NAME = platform.system() + " " + platform.release()
 
     ##############################################################################################
@@ -21,7 +21,7 @@ class WebConnectionManager(ConnectionManager):
         self.userName = userName
         self.password = password
 
-        self.projectKey = None
+          
         self.role = -1
 
         self.session = None
@@ -48,7 +48,7 @@ class WebConnectionManager(ConnectionManager):
     ##############################################################################################
     def getResponseText(self, request, door):
 
-        request.project = self.projectKey
+        request = self.projectKey
         if door is not None:
             request.serial = door.serial
 
@@ -112,6 +112,7 @@ class WebConnectionManager(ConnectionManager):
 
     ##############################################################################################
     def logout(self):
+
         try:
             self.callRequest(AuthenticationRequest(login=False))
             self.role = -1

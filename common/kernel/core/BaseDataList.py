@@ -59,3 +59,11 @@ class BaseDataList:
             if baseData.key == key:
                 return baseData
         return None
+        """دیکشنری  کلاس و بیار بریز توی 
+        self.list
+        و بعد ایتریبلش کن 
+        و بعد کلید اون لیست برابر با ازگوان 
+        find 
+        بود بیا اون لیست و که حلقشو خواستیم بگیریم و نشون بده
+        
+        """

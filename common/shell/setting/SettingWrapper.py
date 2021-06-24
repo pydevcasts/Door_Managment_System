@@ -24,6 +24,11 @@ class SettingWrapper(QObject):
             self.text, self.editButton, self.display = self.createDisplay()
             self.editor = editorFactory.getEditor(setting)
             self.inputDialog = SettingInputDialog(self)
+            """ SettingInputDialog=>The base class of the class hierarchy.
+
+                When called, it accepts no arguments and returns a new featureless instance 
+                that has no instance attributes and cannot be given any.
+            """
         except Exception as e:
             import traceback
             logger.exception(traceback.format_exc())
