@@ -31,6 +31,8 @@ class BluetoothListener(threading.Thread):
 
     ####################################################################################
     def initialCheck(self):
+        """ داریم چک میکنیم ببینیم ارتباطمون با بلوتوث برقرار شده یا خیر
+        """
         try:
             from bluetooth import BluetoothSocket
         except:
@@ -46,12 +48,16 @@ class BluetoothListener(threading.Thread):
 
         from bluetooth import BluetoothSocket, RFCOMM, PORT_ANY, advertise_service
         from bluetooth import SERIAL_PORT_CLASS, SERIAL_PORT_PROFILE  # , OBEX_UUID
-
+        """[https://fa.wikipedia.org/wiki/%D8%A8%D9%84%D9%88%D8%AA%D9%88%D8%AB]
+        چک کن لینک بالا در مورد پرتکل
+        
+        """
         while self.enabled:
 
             try:
                 if self.server_sock is None:
                     self.server_sock = BluetoothSocket(RFCOMM)
+                    """بیا یه پورت شبیه سازی شده بزار"""
                     self.server_sock.bind(("", PORT_ANY))
                     self.server_sock.settimeout(4.0)
                     self.server_sock.listen(1)
@@ -188,6 +194,9 @@ class BluetoothListener(threading.Thread):
 
         try:
             import subprocess
+            """ از ماژول subprocess و متد check_output 
+            دستورات مورد نیاز برای دریافت نام شبکه هایی که قبلا به آن ها متصل شده ایم را دریافت میکنیم
+            """
             import time
 
             subprocess.call(["service", "bluetooth", "restart"])
