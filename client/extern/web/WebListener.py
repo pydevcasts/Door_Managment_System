@@ -15,7 +15,7 @@ class WebListener(threading.Thread):
         self.webApp = None
         try:
             import web
-            urls = ('/deutschtec/request', 'RequestHandler')
+            urls = ('/tekinRad/request', 'RequestHandler')
             self.webApp = web.application(urls, globals())
             """You now have your web.py application running a real web server on your computer.
              Visit that URL and you should see “Hello, world!” 

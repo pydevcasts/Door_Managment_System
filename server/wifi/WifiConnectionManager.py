@@ -38,7 +38,7 @@ class WifiConnectionManager(ConnectionManager):
 
         try:
             wifiConnectionInfo = door.connectionInfo
-            url = "http://" + wifiConnectionInfo.ip + ":8080/deutschtec/request"
+            url = "http://" + wifiConnectionInfo.ip + ":8080/tekinRad/request"
             # headers = {'content-type': 'application/json'}
             # data = {} #get parameters
             params = {"request": request.toJson()}  # post parameters

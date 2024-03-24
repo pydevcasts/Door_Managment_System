@@ -36,7 +36,7 @@ class DoorInfo:
     ###########################################################################
     def getName(self):
         if self._name is None or len(self._name) < 1:
-            self.setName("Deutschtec Door")
+            self.setName("TekinRad Door")
         return self._name
 
     ###########################################################################

@@ -67,9 +67,9 @@ executables = [
                shortcutDir="DesktopFolder")
 ]
 
-setup(name='Deutschtec DMS',
+setup(name='TekinRad DMS',
       version=server_version,
-      description='Deutschtec application to control remote doors',
+      description='TekinRad application to control remote doors',
       options=options,
       executables=executables,
       requires=requires

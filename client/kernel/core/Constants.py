@@ -72,7 +72,7 @@ class Constants:
     SW_Stand_2 = 0
     SW_Stand_3 = 5
 
-    SW_Type_0 = ord('3')  # Steuerungs- Nr // Hersteller-Nr: 0=Deutschtec,1=Holux,2=EAD,3=Bocamo,4=Hörmann
+    SW_Type_0 = ord('3')  # Steuerungs- Nr // Hersteller-Nr: 0=TekinRad,1=Holux,2=EAD,3=Bocamo,4=Hörmann
     SW_Type_1 = ord('0')  # Steuerungs- Nr
     SW_Type_2 = ord('0')  # Steuerungs- Nr
     SW_Type_3 = ord('0')  # Steuerungs- Nr
