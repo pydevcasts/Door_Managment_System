@@ -1,6 +1,5 @@
 # Door Managment System
 
----
 
 **Overview:**
 The Door Management System is an innovative Internet of Things (IoT) solution designed for efficient door access management. This project empowers users with the ability to automate and control door operations remotely, enhancing convenience and security.
