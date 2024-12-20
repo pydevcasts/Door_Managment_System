@@ -1,7 +1,5 @@
 # Door Managment System
 
-Here’s a description you can use to promote your **Door Management System** project on GitHub:
-
 ---
 
 **Overview:**
