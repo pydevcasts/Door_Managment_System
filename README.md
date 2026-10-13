@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-c51a4a)
-![Status](https://img.shields.io/badge/Status-Paused-lightgrey)
+
 
 
 An IoT-based system for remote door access control, written in Python and designed to run on a Raspberry Pi. It supports single-door and multi-door control over multiple channels, scheduled open/close operations, and real-time status monitoring.
